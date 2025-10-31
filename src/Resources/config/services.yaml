@@ -1,0 +1,11 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+
+  Tourze\ProductSubscribeBundle\Controller\:
+    resource: '../../Controller/'
+  Tourze\ProductSubscribeBundle\Repository\:
+    resource: '../../Repository/'
+  Tourze\ProductSubscribeBundle\Service\:
+    resource: '../../Service/'
