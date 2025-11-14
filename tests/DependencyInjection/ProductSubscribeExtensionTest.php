@@ -33,6 +33,8 @@ class ProductSubscribeExtensionTest extends AbstractDependencyInjectionExtension
 
         $configDir = $reflectionMethod->invoke($extension);
 
+        // 确保返回值是字符串类型
+        $this->assertIsString($configDir);
         $this->assertStringEndsWith('/Resources/config', $configDir);
         $this->assertDirectoryExists($configDir);
     }
