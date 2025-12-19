@@ -12,7 +12,7 @@ use Tourze\ProductSubscribeBundle\DependencyInjection\ProductSubscribeExtension;
  * @internal
  */
 #[CoversClass(ProductSubscribeExtension::class)]
-class ProductSubscribeExtensionTest extends AbstractDependencyInjectionExtensionTestCase
+final class ProductSubscribeExtensionTest extends AbstractDependencyInjectionExtensionTestCase
 {
     protected function createExtension(): ProductSubscribeExtension
     {
